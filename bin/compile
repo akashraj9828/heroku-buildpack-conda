@@ -96,6 +96,11 @@ mkdir -p $build/.profile.d
 	export LC_ALL=C.UTF-8
 	export LANG=C.UTF-8  
 EOF
-
+#intalling imp python packages 
+pip install pandas
+pip install numpy
+pip install sklearn
+pip install live-server
+pip install matplotlib
 echo "-----> Purging cache"
 rm -rf $cache/*
